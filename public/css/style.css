@@ -1,0 +1,45 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+img{
+  display: block;
+  margin: 0 auto;
+}
+
+.hidden{
+  display: none;
+}
+
+section > section.row{
+  background-color: white;
+}
+
+section > h2.page{
+  background-color: white;
+  color: black;
+}
+/* #33b5e5 */
+[class*="col"]{
+  padding: 1rem;
+  background-color: rgb(49,54,80);
+  color: white;
+}
+
+.page-changer{
+  width: 8.625rem;
+  height: 2.375rem;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/

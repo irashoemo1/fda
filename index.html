@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+    	<meta charset="utf-8">
+    	<meta name="description" content="This is where your description goes">
+    	<meta name="keywords" content="one, two, three">
+
+		<title>FDA</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<!-- Later we'll have the main route have a bunch of links to take you different pages to look up different things
+		like one for drugs, food, enforcements, events, ETC. -->
+		<section id="enforcementInput">
+			<h2 class="heading">Input a reason for recall:</h2>
+			<input type=text placeholder="Enter a Food or Drink" id="reasonInput">
+			<input type=text placeholder="Enter a State's initials" id="stateInput">
+			<input type=text placeholder="Enter the from date yyyymmdd" id="fromDateInput">
+			<input type=text placeholder="Enter the to date yyyymmdd" id="toDateInput">
+			<button id="byReason">Search by Reason</button>
+		</section>
+
+		<section id="eventInput">
+			<h2 class="heading">Input:</h2>
+			<input type=text placeholder="Enter a Food or Drink" id="industryNameInput">
+			<input type=text placeholder="Enter a reactions" id="reactionsInput">
+			<input type=text placeholder="Enter a start date yyyymmdd" id="startDateInput">
+			<button id="byEffect">Search by Effect</button>
+		</section>
+		
+		<section id="enforcement" class="hidden">
+			<h2 class="address"></h2>
+			<h2 class="city"></h2>
+			<h2 class="country"></h2>
+			<h2>Classification:
+				<span class="classification"></span>
+				<span class ="explanation"></span>
+			</h2>
+			<h2>Product Description:
+				<span class="description"></span>
+			</h2>
+			<h2>Reason:
+				<span class="reasonForRecall"></span>
+			</h2>
+			<h2>States affected:
+				<span class="distributionPattern"></span>
+			</h2>
+			<h2>Recall date: 
+				<span class="recallDate"></span>
+			</h2>
+			<h2>Status: 
+				<span class="status"></span>
+			</h2>
+			<h2>Termination date: 
+				<span class="terminationDate"></span>
+			</h2>
+		</section>
+		
+		
+		<section id="event">
+			<section class="wrapper">
+				<span class="nameBrand"></span>
+				<span class="foodReactions"></span>
+				<span class="outcomes"></span>
+				<span class="role"></span>
+				<span class="dateStarted"></span>
+			</section>
+		</section>
+		
+
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>
